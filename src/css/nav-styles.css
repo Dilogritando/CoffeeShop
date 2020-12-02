@@ -1,0 +1,70 @@
+.nav {
+    font-family: Intro;
+    font-size: 12.5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+}
+
+.nav__options {
+    height: inherit;
+    padding-bottom: 10px;
+    padding: 0 4px 32px 4px;
+}
+
+.nav__options:hover {
+    color: #eab96a;
+    border-bottom: 4px solid #eab96a;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li:not(:last-child):after  {
+    background-image: url('../assets/header-assets/divider.png');
+    background-size: 4.5px 4.5px;
+    display: inline-block;
+    width: 4.5px;
+    height: 4.5px;
+    content: '';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1440px) {
+    .nav__options {
+        padding: 0 4px 35px 4px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+        font-size: 10.5px;
+    }
+
+    .nav__options {
+        padding: 0 4px 23px 4px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        font-size: 8.5px;
+    }
+
+    .nav__options {
+        padding: 0 4px 14px 4px;
+    }
+}

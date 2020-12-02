@@ -1,0 +1,130 @@
+.questions {
+background-image: url("../assets/questions-assets/questions-bg.png");
+background-repeat: no-repeat;
+background-size: 100%;
+width: 100%;
+height: 721px;
+display: flex;
+flex-direction: column;
+}
+
+.questions__header {
+margin: 144.5px 0 268.5px 780.5px;
+}
+
+.questions__header h2 {
+margin: 0;
+padding: 0;
+}
+.questions__header p {
+margin: 0 0 114.5px 0;
+padding: 0;
+line-height: 33px;
+height: 15.5px;
+}
+
+#questions__underscore {
+margin: 21px 0 28px 0;
+padding: 0;
+width: 761.5px;
+}
+
+.questions__form {
+border: none;
+border-bottom: solid gray 1px;
+background-color: none;
+font-family: Intro;
+font-size: 12.5px;
+height: 23.5px;
+border-width: 0 0 0 1px black;
+}
+
+.questions__form--secondary {
+display: flex;
+flex-direction: row;
+margin: 19px 360.5px 268.5px 0;
+}
+
+#questions__form--number {
+align-self: flex-end;
+}
+
+#questions__form--button {
+margin-left: 83px;
+width: 225.5px;
+height: 60.5px;
+border: solid 0.5px #000000;
+background-color: transparent;
+text-align: center;
+}
+
+#questions__form--arrow {
+width: 108.5px;
+height: 25px;
+align-self: center;
+margin-left: -40px;
+}
+
+@media screen and (max-width: 1440px) {
+    .questions {
+        height: 452px;
+    }
+    .questions__header {
+        width: 64%;
+        height: 100%;
+        margin: 3% 0 0% 36%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .questions__header {
+        width: 60%;
+        height: 75%;
+        margin: 3% 0 0% 36%;
+    }
+    .questions__header h2 {
+        width: auto;
+    }
+    #questions__underscore {
+        width: 53%;
+        margin: 1% 0;
+    }
+    .questions__form--secondary {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .questions {
+        height: 182px;
+    }
+    .questions__header {
+        margin-top: 0;
+    }
+    .questions__header p {
+        line-height: 122%;
+        margin: 0 0 13% 0;
+    }
+    .questions__form {
+        height: 10px;
+    }
+    .questions__form--secondary {
+        width: 100%;
+        margin: 0;
+    }
+    #questions__form--button {
+        margin-left: -37px;
+        margin: 50px 0 0 -37px;
+        height: 35px;
+    }
+    #questions__form--arrow {
+        display: none;
+    }
+    #questions__underscore {
+        display: none;
+    }
+    #questions__form--number {
+        align-self: start;
+        margin-top: 25px;
+    }
+}

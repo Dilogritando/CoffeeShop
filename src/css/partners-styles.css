@@ -1,0 +1,118 @@
+.partners {
+    background-image: url("../assets/partners-assets/bg-partners.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 557px;
+}
+
+.partners__header {
+    margin: 134.5px 0 44px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.partners > img {
+    margin: 0 0 96px 0;
+    width: 222.5px;
+}
+
+.partners__header img {
+    width: 31.5px;
+    height: 14.5px;
+}
+
+#partners__text {
+    display: flex;
+    justify-content: center;
+    margin: 0 21.5px;
+}
+
+.partners__logos {
+    height: 78px;
+    width: 1179.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 179px;
+}
+
+.partners__logos .nav-icon {
+    height: 16.5px;
+    width: 9px;
+}
+
+.partners__logos--gallery {
+    height: 78px;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 1440px) {
+    .partners {
+        height: 447px;
+    }
+
+    .partners__logos--gallery {
+        width: 654px;
+        height: 53px;
+        margin: 0 110px;
+    }
+
+    .partners__logos {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .partners {
+        height: 321px;
+    }
+
+    .partners__logos {
+        width: 100%;
+    }
+
+    .partners__header {
+        margin: 41.5px 0 23px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .partners {
+        height: 266px;
+    }
+    .partners__logos--gallery {
+        width: 337px;
+        height: 27px;
+        margin: 8px 110px;
+    }
+
+    .partners > img {
+        margin: 0 0 35px 0;
+        width: 222.5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .nav-icon {
+        display: none;
+    }
+
+    .partners {
+        background-size: 167%;
+        height: 265px;
+    }
+
+    .partners > img {
+        margin: 0 0 35px 0;
+        width: 108.5px;
+    }
+}
